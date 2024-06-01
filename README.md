@@ -15,6 +15,13 @@ Unity Metrics System for hexagonal shape.
 - **HexVector HexVector.QR** : Unit vector of s-axis.
 - **HexVector HexVector.RS** : Unit vector of q-axis.
 - **HexVector[] HexVector.Axis** : The 6 counterclockwise unit vectors.
+- **HexVector -(HexVector hex)** : Returns the opposite vector.
+- **HexVector -(HexVector left, HexVector right)** : Returns the substract result vector.
+- **HexVector +(HexVector left, HexVector right)** : Returns the add result vector.
+- **HexVector \*(int left, HexVector right)** : Returns the scale result vector.
+- **HexVector \*(HexVector left, int right)** : Returns the scale result vector.
+- **bool ==(HexVector left, HexVector right)** : Commpare the equality between the coordinates of the two vectors.
+- **bool !=(HexVector left, HexVector right)** : Denial of ==.
 - **int HexVector.Magnitude** : The length of the vector.
 - **HexVector HexVector.Round(float q, float r, float s)** : Round the float coordinates to int
 - **HexVector HexVector.Vector2ToHex([Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html) vector, float size, bool flat)** : Convert the Cartesian coordinates of the plane to axial coordinates.
