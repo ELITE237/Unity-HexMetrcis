@@ -27,7 +27,6 @@ using UnityEngine;
     public static HexVector operator -(HexVector hex) => new(-hex.q, -hex.r);
     public static HexVector operator -(HexVector left, HexVector right) => left + (-right);
     public static HexVector operator *(int left, HexVector right) => new(left * right.q, left * right.r);
-    public static HexVector operator *(HexVector left, int right) => right * left;
     public static bool operator ==(HexVector left, HexVector right) => left.Equals(right);
     public static bool operator !=(HexVector left, HexVector right) => !(left == right);
 
