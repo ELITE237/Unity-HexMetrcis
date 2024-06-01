@@ -7,6 +7,11 @@ Unity Metrics System for hexagonal shape.
 ## Documentation
 
 ### HexVector Structure
-- **int HexVector.q** : value on q-axis.
-- **int HexVector.r** : value on r-axis.
-- **int HexVector.s** : value on s-axis automatically calculated using the formula s = -(q + r).
+- **int HexVector.q** : Value on q-axis.
+- **int HexVector.r** : Value on r-axis.
+- **int HexVector.s** : Value on s-axis automatically calculated using the formula s = -(q + r).
+- **HexVector HexVector.Zero** : Null vector.
+- **HexVector HexVector.SQ** : Unit vector of r-axis.
+- **HexVector HexVector.QR** : Unit vector of s-axis.
+- **HexVector HexVector.RS** : Unit vector of q-axis.
+- **HexVector[] HexVector.Axis** : The 6 counterclockwise unit vectors.
