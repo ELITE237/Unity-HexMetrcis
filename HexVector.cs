@@ -115,40 +115,16 @@ using UnityEngine;
         return results;
     }
 
-    public static HexVector[] Range(HexVector center, int range)
+    public static HexVector[] Range(HexVector center, int radius)
     {
-        range = Mathf.Abs(range);
+        radius = Mathf.Abs(radius);
 
         HexVector[] results = new HexVector[0];
-        for (int q = -range; q <= range; q++)
+        for (int q = -radius; q <= radius; q++)
         {
-            for (int r = Mathf.Max(-range, -q - range); r <= Mathf.Min(range, -q + range); r++)
+            for (int r = Mathf.Max(-radius, -q - radius); r <= Mathf.Min(radius, -q + radius); r++)
             {
                 results = results.Append(center + new HexVector(q, r)).ToArray();
-            }
-        }
-
-        return results;
-    }
-
-    public static HexVector[] RangesIntersection(HexVector hex1, int range1, HexVector hex2, int range2)
-    {
-        int qMin = Mathf.Min(hex1.q, hex2.q);
-        int qMax = Mathf.Max(hex1.q, hex2.q);
-
-        int rMin = Mathf.Min(hex1.r, hex2.r);
-        int rMax = Mathf.Max(hex1.r, hex2.r);
-
-        int sMin = Mathf.Min(hex1.s, hex2.s);
-        int sMax = Mathf.Max(hex1.s, hex2.s);
-
-        HexVector[] results = new HexVector[0];
-
-        for (int q = qMin; q <= qMax; q++)
-        {
-            for (int r = Mathf.Max(rMin, -q - sMax); r <= Mathf.Min(rMax, -q - sMin); r++)
-            {
-                results = results.Append(new HexVector(q, r)).ToArray();
             }
         }
 
