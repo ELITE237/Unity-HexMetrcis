@@ -2,7 +2,7 @@
 Unity Metrics System for hexagonal grid.
 
 ## Content
-- **HexVector.cs** : Contains the HexVector structure. The HexVector structure is a coordinate system for hexagonal grids based on the [axial coordinate system](https://www.redblobgames.com/grids/hexagons/#coordinates-axial).
+- **HexVector.cs** : Contains the HexVector structure. The HexVector structure is a coordinate system for hexagonal grids based on the [axial coordinate system](https://gamedevelopment.tutsplus.com/introduction-to-axial-coordinates-for-hexagonal-tile-based-games--cms-28820t).
 
 ## Documentation
 
