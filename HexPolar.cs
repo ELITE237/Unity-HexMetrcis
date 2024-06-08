@@ -10,7 +10,7 @@ public struct HexPolar
 
     public int Radius { readonly get => Mathf.Abs(m); set => m = value; }
     public int Angle { readonly get => Radius == 0 ? 0 : a - Mathf.RoundToInt(a / (6f * Radius)); set => a = value; }
-    public int SignedAngle { readonly get => 1 - (3 * Radius) + Angle; set => a = value; }
+    public int SignedAngle { readonly get => Angle + (Angle <= (3 * Radius) ? 0 : 1 - (3 * Radius)); set => a = value; }
 
     public HexPolar(int m, int a)
     {
