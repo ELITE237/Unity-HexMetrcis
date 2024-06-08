@@ -37,7 +37,7 @@ Unity Metrics System for hexagonal grid.
 ### HexPolar Structure
 - **int HexPolar.m** : It is the radial coordinate that represents the distance from the center.
 - **int HexPolar.a** : It is the angular coordinate taht represents the counterclockwise angle between the point and the semi-straight line of angle 0°.
-- **int HexPolar.Range** : It is the absolute value of distance coordinate (*it is recommended that you use this property instead of HexPolar.m*).
+- **int HexPolar.Range** : It is the absolute value of radial coordinate (*it is recommended that you use this property instead of HexPolar.m*).
 - **int HexPolar.Angle** : It is the equivalent of the angular coordinate clamped between [0, 6 * Range[. The equivalent value in radians is in the range [0, 2 * PI[. (*it is recommended that you use this property instead of HexPolar.a*).
 - **int HexPolar.SignedAngle** : It is the equivalent of the angular coordinate clamped between ]-3 * Range, 3 * Range]. The equivalent value in radians is in the range ]-PI, PI].
 - **HexPolar HexPolar.Zero** : Null polar.
