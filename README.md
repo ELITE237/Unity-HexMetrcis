@@ -53,3 +53,8 @@ Unity Metrics System for hexagonal grid.
 - **int HexPolar.Distance(HexPolar start, HexPolar end)** : Returns the distance in number of hexes between the two points.
 - **HexPolar[] HexPolar.Ring(HexPolar center, int radius)** : Returns the set of points whose distance from the center is equal to the radius.
 - **HexPolar[] HexPolar.Range(HexPolar center, int radius)** : Returns the set of points whose distance from the center is less than or equal to the radius.
+
+### HexMetrics Class
+- **float HexAngleOffset(bool flat, bool floret)** : Returns the offset of angle rotation of Y-axis.
+- **HexPolar VectorToPolar(HexVector vector)** : Converts HexVector to HexPolar.
+- **HexVector PolarToVector(HexPolar polar)** : Converts HexPolar to HexVector.
