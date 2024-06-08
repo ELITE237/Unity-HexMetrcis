@@ -74,9 +74,9 @@ using UnityEngine;
         return Mathf.Max(Mathf.Abs(vector.q), Mathf.Abs(vector.r), Mathf.Abs(vector.s));
     }
 
-    public static HexVector HexRotation(HexVector hex, HexVector center, bool clockWise = false)
+    public static HexVector HexRotation(HexVector hex, HexVector center, bool clockwise = false)
     {
-        return center + (clockWise ? new HexVector(-hex.s, -hex.q) : new HexVector(-hex.r, -hex.s));
+        return center + (clockwise ? new HexVector(-hex.s, -hex.q) : new HexVector(-hex.r, -hex.s));
     }
 
     public static HexVector[] Line(HexVector start, HexVector end)
